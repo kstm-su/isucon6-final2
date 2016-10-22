@@ -65,6 +65,7 @@ server {
 	
 
 	location /img {
+		proxy_cache one;
 		proxy_cache_min_uses 1;
 		proxy_store on;
 		proxy_cache_valid any 3s;
