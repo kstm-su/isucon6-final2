@@ -63,15 +63,15 @@ server {
 		root /home/isucon/webapp/react/public;
 	}
 	
-
-	location /img {
-		proxy_cache one;
-		proxy_cache_min_uses 1;
-		proxy_store on;
-		proxy_cache_valid any 3s;
-		proxy_pass http://backend_node;
-	}
-
+#
+#	location /img {
+#		proxy_cache one;
+#		proxy_cache_min_uses 1;
+#		proxy_store on;
+#		proxy_cache_valid any 3s;
+#		proxy_pass http://backend_node;
+#	}
+#
 	location /api {
 		### 
 		# settings for Server-Sent Events
