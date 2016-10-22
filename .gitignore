@@ -1,2 +1,4 @@
 docker-compose.yml
 .data
+.*.swp
+.*.swo
